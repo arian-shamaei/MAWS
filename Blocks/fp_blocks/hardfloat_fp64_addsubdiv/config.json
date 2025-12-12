@@ -1,0 +1,58 @@
+{
+  "mode": "quick",
+  "formats": [
+    {
+      "id": 0,
+      "name": "fp64",
+      "exp": 11,
+      "sig": 53
+    }
+  ],
+  "interface": "ieee",
+  "op_families": [
+    "ADD_SUB",
+    "DIV_SQRT"
+  ],
+  "family_details": {
+    "ADD_SUB": {
+      "formats": [
+        0
+      ],
+      "split_add_sub": false
+    },
+    "DIV_SQRT": {
+      "formats": [
+        0
+      ],
+      "div_enabled": true,
+      "sqrt_enabled": true,
+      "split_div_sqrt": false,
+      "variant": "small"
+    }
+  },
+  "ops": [
+    {
+      "name": "ADD_SUB_f0",
+      "opcode": 0,
+      "fmt": 0,
+      "type": "addsub"
+    },
+    {
+      "name": "DIV_SQRT_f0",
+      "opcode": 1,
+      "fmt": 0,
+      "type": "divsqrt"
+    }
+  ],
+  "rounding": {
+    "modes": [
+      "round_near_even"
+    ],
+    "policy": "clamp",
+    "default": "round_near_even"
+  },
+  "generator_class": "hardfloat.Emithardfloat_fp64_addsubdiv",
+  "tininess": "after",
+  "nan_policy": "default",
+  "opcode_map": {}
+}

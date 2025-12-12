@@ -1,0 +1,44 @@
+{
+  "mode": "advanced",
+  "formats": [
+    {
+      "id": 0,
+      "name": "fp_base",
+      "exp": 5,
+      "sig": 11
+    }
+  ],
+  "interface": "ieee",
+  "op_families": [
+    "ADD_SUB"
+  ],
+  "family_details": {
+    "ADD_SUB": {
+      "formats": [
+        0
+      ],
+      "split_add_sub": false,
+      "sub_only": true,
+      "add_only": false
+    }
+  },
+  "ops": [
+    {
+      "name": "SUB_f0",
+      "opcode": 0,
+      "fmt": 0,
+      "type": "sub"
+    }
+  ],
+  "rounding": {
+    "modes": [
+      "round_near_even"
+    ],
+    "policy": "clamp",
+    "default": "round_near_even"
+  },
+  "generator_class": "hardfloat.Emitfp16_sub",
+  "tininess": "after",
+  "nan_policy": "default",
+  "opcode_map": {}
+}

@@ -1,0 +1,15 @@
+{
+  "design_name": "fp32_demo",
+  "system_name": "maws_system",
+  "bus_width": 64,
+  "tid_width": 4,
+  "blocks": [
+    {
+      "name": "ieee_fp32_mul",
+      "instance": "fp32_mul",
+      "fmt": 0
+    }
+  ],
+  "vectors": [],
+  "expected": []
+}

@@ -1,0 +1,64 @@
+{
+  "top_module": "hardfloat_fp64_addsubdiv",
+  "filelist": [
+    "Blocks/fp_blocks/hardfloat_fp64_addsubdiv/rtl/hardfloat_fp64_addsubdiv.v"
+  ],
+  "inputs": [
+    {
+      "name": "clock",
+      "width": 1,
+      "default": 0
+    },
+    {
+      "name": "reset",
+      "width": 1,
+      "default": 0
+    },
+    {
+      "name": "io_opSel",
+      "width": 1,
+      "default": 0
+    },
+    {
+      "name": "io_a",
+      "width": 64
+    },
+    {
+      "name": "io_b",
+      "width": 64
+    },
+    {
+      "name": "io_c",
+      "width": 64
+    },
+    {
+      "name": "io_roundingMode",
+      "width": 3,
+      "default": 0
+    },
+    {
+      "name": "io_subOp",
+      "width": 1,
+      "default": 0
+    },
+    {
+      "name": "io_sqrtOp",
+      "width": 1,
+      "default": 0
+    }
+  ],
+  "outputs": [
+    {
+      "name": "io_out",
+      "width": 64
+    },
+    {
+      "name": "io_exceptionFlags",
+      "width": 5
+    },
+    {
+      "name": "io_outValid",
+      "width": 1
+    }
+  ]
+}

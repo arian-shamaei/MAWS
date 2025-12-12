@@ -1,0 +1,50 @@
+{
+  "top_module": "ieee_fp32_mul",
+  "filelist": [
+    "Blocks/fp_blocks/ieee_fp32_mul/rtl/ieee_fp32_mul.v"
+  ],
+  "inputs": [
+    {
+      "name": "clock",
+      "width": 1,
+      "default": 0
+    },
+    {
+      "name": "reset",
+      "width": 1,
+      "default": 0
+    },
+    {
+      "name": "io_opSel",
+      "width": 1,
+      "default": 0
+    },
+    {
+      "name": "io_a",
+      "width": 32
+    },
+    {
+      "name": "io_b",
+      "width": 32
+    },
+    {
+      "name": "io_c",
+      "width": 32
+    },
+    {
+      "name": "io_roundingMode",
+      "width": 3,
+      "default": 0
+    }
+  ],
+  "outputs": [
+    {
+      "name": "io_out",
+      "width": 32
+    },
+    {
+      "name": "io_exceptionFlags",
+      "width": 5
+    }
+  ]
+}

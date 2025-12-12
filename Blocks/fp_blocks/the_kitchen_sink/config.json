@@ -1,0 +1,160 @@
+{
+  "mode": "quick",
+  "formats": [
+    {
+      "id": 0,
+      "name": "fp32",
+      "exp": 8,
+      "sig": 24
+    }
+  ],
+  "interface": "ieee",
+  "op_families": [
+    "ADD_SUB",
+    "FMA",
+    "DIV_SQRT",
+    "CMP",
+    "F2F",
+    "F2I",
+    "I2F"
+  ],
+  "family_details": {
+    "ADD_SUB": {
+      "formats": [
+        0
+      ],
+      "split_add_sub": true,
+      "sub_only": false,
+      "add_only": false
+    },
+    "FMA": {
+      "formats": [
+        0
+      ],
+      "expose_mul": "3",
+      "fma_only": false,
+      "mul_only": false
+    },
+    "DIV_SQRT": {
+      "formats": [
+        0
+      ],
+      "div_enabled": true,
+      "sqrt_enabled": true,
+      "split_div_sqrt": true,
+      "div_only": false,
+      "sqrt_only": false,
+      "variant": "small"
+    },
+    "CMP": {
+      "formats": [
+        0
+      ],
+      "cmp_out_encoding": "2bit_lt_eq",
+      "nan_behavior": "quiet"
+    },
+    "F2F": {
+      "src_formats": [
+        0
+      ],
+      "dst_formats": [
+        0
+      ],
+      "default_dst": ""
+    },
+    "F2I": {
+      "formats": [
+        0
+      ],
+      "int_widths": "32",
+      "signedness": "flag",
+      "overflow_policy": "saturate"
+    },
+    "I2F": {
+      "dst_formats": [
+        0
+      ],
+      "int_widths": "32",
+      "signedness": "flag"
+    }
+  },
+  "ops": [
+    {
+      "name": "ADD_f0",
+      "opcode": 0,
+      "fmt": 0,
+      "type": "add"
+    },
+    {
+      "name": "SUB_f0",
+      "opcode": 1,
+      "fmt": 0,
+      "type": "sub"
+    },
+    {
+      "name": "FMA_f0",
+      "opcode": 2,
+      "fmt": 0,
+      "type": "fma"
+    },
+    {
+      "name": "MUL_f0",
+      "opcode": 3,
+      "fmt": 0,
+      "type": "mul"
+    },
+    {
+      "name": "DIV_f0",
+      "opcode": 4,
+      "fmt": 0,
+      "type": "div"
+    },
+    {
+      "name": "SQRT_f0",
+      "opcode": 5,
+      "fmt": 0,
+      "type": "sqrt"
+    },
+    {
+      "name": "CMP_f0",
+      "opcode": 6,
+      "fmt": 0,
+      "type": "cmp"
+    },
+    {
+      "name": "F2F_f0_to0",
+      "opcode": 7,
+      "fmt": 0,
+      "type": "f2f",
+      "dst_fmt": 0
+    },
+    {
+      "name": "F2I_f0_w32",
+      "opcode": 8,
+      "fmt": 0,
+      "type": "f2i",
+      "int_width": 32,
+      "signed_flag": true,
+      "overflow_policy": "saturate"
+    },
+    {
+      "name": "I2F_f0_w32",
+      "opcode": 9,
+      "fmt": 0,
+      "type": "i2f",
+      "int_width": 32,
+      "signed_flag": true
+    }
+  ],
+  "rounding": {
+    "modes": [
+      "round_near_even"
+    ],
+    "policy": "clamp",
+    "default": "round_near_even"
+  },
+  "generator_class": "hardfloat.Emitthe_kitchen_sink",
+  "tininess": "after",
+  "nan_policy": "default",
+  "opcode_map": {}
+}

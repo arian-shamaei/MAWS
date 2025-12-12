@@ -1,0 +1,4 @@
+# vec format: clock,reset,opSel,a,b,c,roundingMode
+0,0,1,3c00,3c00,0000,0
+0,0,1,7c00,3c00,0000,0
+0,0,1,7e00,3c00,0000,0

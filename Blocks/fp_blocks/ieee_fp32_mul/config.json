@@ -1,0 +1,44 @@
+{
+  "mode": "advanced",
+  "formats": [
+    {
+      "id": 0,
+      "name": "fp_base",
+      "exp": 8,
+      "sig": 24
+    }
+  ],
+  "interface": "ieee",
+  "op_families": [
+    "FMA"
+  ],
+  "family_details": {
+    "FMA": {
+      "formats": [
+        0
+      ],
+      "expose_mul": "2",
+      "fma_only": false,
+      "mul_only": true
+    }
+  },
+  "ops": [
+    {
+      "name": "MUL_f0",
+      "opcode": 0,
+      "fmt": 0,
+      "type": "mul"
+    }
+  ],
+  "rounding": {
+    "modes": [
+      "round_near_even"
+    ],
+    "policy": "clamp",
+    "default": "round_near_even"
+  },
+  "generator_class": "hardfloat.Emitieee_fp32_mul",
+  "tininess": "after",
+  "nan_policy": "default",
+  "opcode_map": {}
+}

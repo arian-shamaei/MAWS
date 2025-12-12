@@ -1,0 +1,16 @@
+../../fp_blocks/fp32_block_workspace/rtl/hardfloat_round_e8_s24.sv
+../../fp_blocks/fp32_block_workspace/rtl/hardfloat_round_e8_s24_with_inf.sv
+../../fp_blocks/fp32_block_workspace/rtl/fp32_pkg.sv
+../../fp_blocks/fp32_block_workspace/rtl/fp32_addsub_recfn.sv
+../../fp_blocks/fp32_block_workspace/rtl/fp32_mul_recfn.sv
+../../fp_blocks/fp32_block_workspace/rtl/fp32_fma_recfn.sv
+../../fp_blocks/fp32_block_workspace/rtl/fp32_divsqrt_small_recfn.sv
+../../fp_blocks/fp32_block_workspace/rtl/fp32_block_top.sv
+../../fp_blocks/fp32_block_workspace/out/generated_rtl/RecFNFromFN_8_24.sv
+../../fp_blocks/fp32_block_workspace/out/generated_rtl/FNFromRecFN_8_24.sv
+../src/FP64MatrixMulBlock_ns.sv
+../../DMX/src/dmx_pkg.sv
+../../DMX/src/dmx_hub.sv
+../../DMX/src/dmx_fp32_wrapper.sv
+../../DMX/src/dmx_fp64_wrapper.sv
+tb_cpu_generic.sv

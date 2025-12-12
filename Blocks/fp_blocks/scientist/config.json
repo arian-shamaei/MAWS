@@ -1,0 +1,47 @@
+{
+  "mode": "advanced",
+  "formats": [
+    {
+      "id": 0,
+      "name": "fp_base",
+      "exp": 23,
+      "sig": 489
+    }
+  ],
+  "interface": "ieee",
+  "op_families": [
+    "DIV_SQRT"
+  ],
+  "family_details": {
+    "DIV_SQRT": {
+      "formats": [
+        0
+      ],
+      "div_enabled": true,
+      "sqrt_enabled": false,
+      "split_div_sqrt": false,
+      "div_only": true,
+      "sqrt_only": false,
+      "variant": "small"
+    }
+  },
+  "ops": [
+    {
+      "name": "DIV_f0",
+      "opcode": 0,
+      "fmt": 0,
+      "type": "div"
+    }
+  ],
+  "rounding": {
+    "modes": [
+      "round_near_even"
+    ],
+    "policy": "clamp",
+    "default": "round_near_even"
+  },
+  "generator_class": "hardfloat.Emitscientist",
+  "tininess": "after",
+  "nan_policy": "default",
+  "opcode_map": {}
+}

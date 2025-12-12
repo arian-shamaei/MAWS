@@ -1,0 +1,59 @@
+{
+  "top_module": "the_kitchen_sink",
+  "filelist": [
+    "Blocks/fp_blocks/the_kitchen_sink/rtl/the_kitchen_sink.v"
+  ],
+  "inputs": [
+    {
+      "name": "clock",
+      "width": 1,
+      "default": 0
+    },
+    {
+      "name": "reset",
+      "width": 1,
+      "default": 0
+    },
+    {
+      "name": "io_opSel",
+      "width": 4,
+      "default": 0
+    },
+    {
+      "name": "io_a",
+      "width": 32
+    },
+    {
+      "name": "io_b",
+      "width": 32
+    },
+    {
+      "name": "io_c",
+      "width": 32
+    },
+    {
+      "name": "io_roundingMode",
+      "width": 3,
+      "default": 0
+    },
+    {
+      "name": "io_signedSel",
+      "width": 1,
+      "default": 0
+    }
+  ],
+  "outputs": [
+    {
+      "name": "io_out",
+      "width": 32
+    },
+    {
+      "name": "io_exceptionFlags",
+      "width": 5
+    },
+    {
+      "name": "io_cmpOut",
+      "width": 2
+    }
+  ]
+}

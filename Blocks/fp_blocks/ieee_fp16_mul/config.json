@@ -1,0 +1,48 @@
+{
+  "mode": "quick",
+  "formats": [
+    {
+      "id": 0,
+      "name": "fp16",
+      "exp": 5,
+      "sig": 11
+    }
+  ],
+  "interface": "ieee",
+  "op_families": [
+    "FMA"
+  ],
+  "family_details": {
+    "FMA": {
+      "formats": [
+        0
+      ],
+      "expose_mul": "3"
+    }
+  },
+  "ops": [
+    {
+      "name": "FMA_f0",
+      "opcode": 0,
+      "fmt": 0,
+      "type": "fma"
+    },
+    {
+      "name": "MUL_f0",
+      "opcode": 1,
+      "fmt": 0,
+      "type": "mul"
+    }
+  ],
+  "rounding": {
+    "modes": [
+      "round_near_even"
+    ],
+    "policy": "clamp",
+    "default": "round_near_even"
+  },
+  "generator_class": "hardfloat.Emitieee_fp16_mul",
+  "tininess": "after",
+  "nan_policy": "default",
+  "opcode_map": {}
+}

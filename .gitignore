@@ -1,0 +1,19 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Generated IP collateral
+IP-creator/maw_blocks/
+IP-creator/config/*_interactive.json
+**/logs/
+**/work/
+**/modelsim_transcript_*.log
+**/transcript
+
+# Third-party dependencies (user-supplied)
+Blocks/generators/berkeley-hardfloat/
+Blocks/generators/berkeley-hardfloat-master/
+
+# Intermediate hardware dumps
+*.fir
+*.anno.json

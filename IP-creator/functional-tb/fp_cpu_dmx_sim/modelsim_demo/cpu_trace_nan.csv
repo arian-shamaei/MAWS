@@ -1,0 +1,4 @@
+scenario,stage,source,destination,start_cycle,end_cycle,value_hex,value_decimal,flags
+NaN propagation,Stage 1,FP32 Block,FP64 Matrix,1,5,7fc00000,1.#QNAN0, invalid
+NaN propagation,Stage 2,FP64 Matrix,FP32 Block,11,16,7ff8000000000000,1.#QNAN0,none
+NaN propagation,Stage 3,FP32 Block,CPU Output,18,22,7fc00000,1.#QNAN0,none

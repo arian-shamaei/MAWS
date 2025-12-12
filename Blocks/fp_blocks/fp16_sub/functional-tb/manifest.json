@@ -1,0 +1,50 @@
+{
+  "top_module": "fp16_sub",
+  "filelist": [
+    "Blocks/fp_blocks/fp16_sub/rtl/fp16_sub.v"
+  ],
+  "inputs": [
+    {
+      "name": "clock",
+      "width": 1,
+      "default": 0
+    },
+    {
+      "name": "reset",
+      "width": 1,
+      "default": 0
+    },
+    {
+      "name": "io_opSel",
+      "width": 1,
+      "default": 0
+    },
+    {
+      "name": "io_a",
+      "width": 16
+    },
+    {
+      "name": "io_b",
+      "width": 16
+    },
+    {
+      "name": "io_c",
+      "width": 16
+    },
+    {
+      "name": "io_roundingMode",
+      "width": 3,
+      "default": 0
+    }
+  ],
+  "outputs": [
+    {
+      "name": "io_out",
+      "width": 16
+    },
+    {
+      "name": "io_exceptionFlags",
+      "width": 5
+    }
+  ]
+}
