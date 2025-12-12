@@ -48,4 +48,4 @@ MAWS is a modular, scriptable flow for composing floating-point accelerator bloc
 
 ## Credits
 
-MAWS builds on the excellent [Berkeley HardFloat](https://github.com/ucb-bar/berkeley-hardfloat) project for FP unit generation, with additional contributions from [Yara Al Shorman](https://github.com/YaraAlShorman). Please reference the upstream projects and licenses when redistributing generated blocks or emitters.
+MAWS builds on [Berkeley HardFloat](https://github.com/ucb-bar/berkeley-hardfloat) project for FP unit generation, with additional contributions from [Yara Al Shorman](https://github.com/YaraAlShorman). 
