@@ -15,9 +15,8 @@ MAWS is a modular, scriptable flow for composing floating-point accelerator bloc
 for first time setup, clone the repository and run the bootstrap_hardfloat.py script to grab the Berkely HardFloat repo into the Blocks/generators directory.
 ```
 
-## Typical Workflow
 
-### 1. Build or clone FP blocks (`Blocks/`)
+### Build or clone FP blocks (`Blocks/`)
 
 - Generate new blocks with the wizard:
   ```
@@ -26,7 +25,7 @@ for first time setup, clone the repository and run the bootstrap_hardfloat.py sc
   This produces `Blocks/fp_blocks/<block>/` along with a `generate.ps1` helper that will rebuild the RTL once HardFloat is present.
 - Use the functional TB scaffolds under `Blocks/functional-tb/` to validate new blocks before composing them into a system.
 
-### 2. Assemble a DMX system (`IP-creator/`)
+### Assemble a DMX system (`IP-creator/`)
 
 - Use the CLI wizard or provide a JSON config (see `IP-creator/examples/minimal_design.json`):
   ```
@@ -34,7 +33,7 @@ for first time setup, clone the repository and run the bootstrap_hardfloat.py sc
   ```
 - The generator writes everything into `IP-creator/maw_blocks/<design>/` (config, HDL, TB, docs, packaging stubs). 
 
-### 3. Verify
+### Verify
 
 - Run the supplied CPU+DMX testbench under `IP-creator/functional-tb/fp_cpu_dmx_sim/` (`vsim -c -do run_tb.do`) or adapt it for your design.
 - Add your own vectors under `<design>/tb/` and iterate until both block-level and system-level benches pass.
