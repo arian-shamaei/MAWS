@@ -6,10 +6,9 @@ MAWS is a modular, scriptable flow for composing floating-point accelerator bloc
 
 ## Prerequisites
 
-- Python 3.11+ (standard library only)
+- Python 3.11+
 - Java 11+ and [sbt](https://www.scala-sbt.org/) for the Chisel/HardFloat generators
 - ModelSim/Questa for the supplied functional testbenches (optional but recommended)
-- FPGA toolchain for downstream integration
 
 ## First-Time Setup
 
