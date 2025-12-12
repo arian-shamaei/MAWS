@@ -11,9 +11,9 @@ MAWS is a modular, scriptable flow for composing floating-point accelerator bloc
 
 ## First-Time Setup
 
-```
+
 for first time setup, clone the repository and run the bootstrap_hardfloat.py script to grab the Berkely HardFloat repo into the Blocks/generators directory.
-```
+
 
 
 ### Build or clone FP blocks (`Blocks/`)
