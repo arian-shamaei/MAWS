@@ -2,7 +2,7 @@
 
 MAWS is a modular, scriptable flow for composing floating-point accelerator blocks behind a DMX-style issue hub, verifying them with supplied ModelSim benches, and exporting turn-key IP packages.
 
-![Config](dmx figure.png)
+![Config](dmx-figure.png)
 
 ## Prerequisites
 
