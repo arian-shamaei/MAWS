@@ -1,6 +1,6 @@
 # Modular Accelerator Wrapper Stream (MAWS)
 
-MAWS is a modular, scriptable flow for composing floating-point accelerator blocks behind a DMX-style issue hub, verifying them with supplied ModelSim benches, and exporting turn-key IP packages.
+MAWS is a modular, scriptable flow for composing floating-point accelerator blocks behind a hub responsible for moving and reformatting data. Vector files can be inputted to test the functionality of the system. The system package can be exported into a full IP.
 
 ![Config](dmx-figure.png)
 
@@ -8,13 +8,12 @@ MAWS is a modular, scriptable flow for composing floating-point accelerator bloc
 
 - Python 3.11+
 - Java 11+ and [sbt](https://www.scala-sbt.org/) for the Chisel/HardFloat generators
-- ModelSim/Questa for the supplied functional testbenches (optional but recommended)
+- ModelSim/Questa was used for simulation
 
-## First-Time Setup
+## Berekeley Dependency
 
-1. Clone this repo.
-2. Fetch Berkeley HardFloat: `python scripts/bootstrap_hardfloat.py`
-3. Follow the workflow below to generate blocks and systems.
+This project uses [Berkeley HardFloat](https://github.com/ucb-bar/berkeley-hardfloat) for FPU generation. You will either need to clone the repo or run `python scripts/bootstrap_hardfloat.py` to obtain it.
+
 
 ### Build or clone FP blocks (`Blocks/`)
 
